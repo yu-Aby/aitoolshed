@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIToolshed.io - Discover the Best AI Tools | Featuring Sora 2</title>
+    <meta name="description" content="Discover the best AI tools including Sora 2. AIToolshed.io features cutting-edge AI technologies for video, image, audio, and text generation.">
+    <meta name="keywords" content="AI tools, Sora 2, artificial intelligence, video generation, image generation, audio generation, text generation, AI directory">
+    <link rel="canonical" href="https://aitoolshed.io/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>AIToolshed.io</h1>
+                <span class="brand-tagline">Featuring Sora 2</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="directory.html" class="nav-link" data-i18n="nav.directory">Tool Directory</a>
+                <a href="#categories" class="nav-link" data-i18n="nav.categories">Categories</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About Us</a>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search AI tools..." id="searchInput" data-i18n="nav.search.placeholder">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Discover the Best AI Tools</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Featuring Sora 2 and cutting-edge AI technologies</p>
+                <p class="hero-description" data-i18n="hero.description">
+                    AIToolshed.io is your ultimate destination for discovering the most innovative AI tools. 
+                    From Sora 2's revolutionary video generation to the latest in image, audio, and text AI technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tool-detail.html" class="btn btn-primary" data-i18n="hero.cta">Explore Sora 2</a>
+                    <a href="directory.html" class="btn btn-secondary" data-i18n="hero.browse">Browse All Tools</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card sora-highlight">
+                    <div class="card-icon">🎬</div>
+                    <h3>Sora 2</h3>
+                    <p>Revolutionary AI Video Generation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="featured-tools" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="featured.title">Featured AI Tools</h2>
+                <p data-i18n="featured.subtitle">Handpicked tools including the revolutionary Sora 2</p>
+            </div>
+            <div class="tools-grid" id="featuredTools">
+                <!-- Tools will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Additions Section -->
+    <section class="latest-tools" id="latest">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="latest.title">Latest Additions</h2>
+                <p data-i18n="latest.subtitle">Newest AI tools added to our collection</p>
+            </div>
+            <div class="tools-grid" id="latestTools">
+                <!-- Tools will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All AI Tools Section -->
+    <section class="all-tools" id="all-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="allTools.title">All AI Tools</h2>
+                <p data-i18n="allTools.subtitle">Complete collection of AI tools for easy browsing</p>
+            </div>
+            <div class="tools-filter-tabs">
+                <button class="filter-tab active" data-category="all" data-i18n="allTools.filter.all">All Tools</button>
+                <button class="filter-tab" data-category="video" data-i18n="categories.video">Video & Animation</button>
+                <button class="filter-tab" data-category="image" data-i18n="categories.image">Image & Design</button>
+                <button class="filter-tab" data-category="audio" data-i18n="categories.audio">Audio & Music</button>
+                <button class="filter-tab" data-category="text" data-i18n="categories.text">Text & Writing</button>
+            </div>
+            <div class="tools-grid all-tools-grid" id="allToolsGrid">
+                <!-- All tools will be loaded dynamically -->
+            </div>
+            <div class="view-more-section">
+                <a href="directory.html" class="btn btn-outline" data-i18n="allTools.viewMore">View Advanced Directory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="categories.title">Popular Categories</h2>
+                <p data-i18n="categories.subtitle">Explore AI tools by category</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="video">
+                    <div class="category-icon">🎬</div>
+                    <h3 data-i18n="categories.video">Video & Animation</h3>
+                    <p>Including Sora 2 and other video generation tools</p>
+                </div>
+                <div class="category-card" data-category="image">
+                    <div class="category-icon">🎨</div>
+                    <h3 data-i18n="categories.image">Image & Design</h3>
+                    <p>AI-powered image creation and editing tools</p>
+                </div>
+                <div class="category-card" data-category="audio">
+                    <div class="category-icon">🎵</div>
+                    <h3 data-i18n="categories.audio">Audio & Music</h3>
+                    <p>Voice synthesis and music generation tools</p>
+                </div>
+                <div class="category-card" data-category="text">
+                    <div class="category-icon">✍️</div>
+                    <h3 data-i18n="categories.text">Text & Writing</h3>
+                    <p>Content creation and writing assistance tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AIToolshed.io</h3>
+                    <p data-i18n="footer.description">Discover the best AI tools and boost your productivity. Featuring Sora 2 and other cutting-edge AI technologies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.categories.title">Tool Categories</h4>
+                    <ul>
+                        <li><a href="directory.html?category=video" data-i18n="categories.video">Video & Animation</a></li>
+                        <li><a href="directory.html?category=image" data-i18n="categories.image">Image & Design</a></li>
+                        <li><a href="directory.html?category=audio" data-i18n="categories.audio">Audio & Music</a></li>
+                        <li><a href="directory.html?category=text" data-i18n="categories.text">Text & Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.popular.title">Popular Tools</h4>
+                    <ul>
+                        <li><a href="tool-detail.html">Sora 2</a></li>
+                        <li><a href="#">Midjourney V7</a></li>
+                        <li><a href="#">ChatGPT-5</a></li>
+                        <li><a href="#">Suno V3</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.about.title">About Us</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.about.company">About AIToolshed</a></li>
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 AIToolshed.io. Featuring Sora 2 and AI tools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

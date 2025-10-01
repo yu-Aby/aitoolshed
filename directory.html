@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Directory | AIToolshed.io - Comprehensive AI Tools Collection</title>
+    <meta name="description" content="Browse our comprehensive directory of AI tools including Sora 2. Filter by category, pricing, and features to find the perfect AI solution.">
+    <meta name="keywords" content="AI tools directory, Sora 2, AI tool collection, video generation, image generation, audio generation, text generation">
+    <link rel="canonical" href="https://aitoolshed.io/directory">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="directory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><a href="index.html">AIToolshed.io</a></h1>
+                <span class="brand-tagline">Featuring Sora 2</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="directory.html" class="nav-link active" data-i18n="nav.directory">Tool Directory</a>
+                <a href="index.html#categories" class="nav-link" data-i18n="nav.categories">Categories</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About Us</a>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search AI tools..." id="searchInput" data-i18n="nav.search.placeholder">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-i18n="breadcrumb.home">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span data-i18n="breadcrumb.directory">Tool Directory</span>
+        </div>
+    </div>
+
+    <!-- Directory Header -->
+    <section class="directory-header">
+        <div class="container">
+            <h1 data-i18n="directory.title">AI Tool Directory</h1>
+            <p data-i18n="directory.subtitle">Comprehensive collection of AI tools with advanced filtering</p>
+        </div>
+    </section>
+
+    <!-- Filters and Controls -->
+    <section class="directory-controls">
+        <div class="container">
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label data-i18n="directory.filters.category">Category</label>
+                    <select id="categoryFilter">
+                        <option value="" data-i18n="directory.filters.all">All</option>
+                        <option value="video" data-i18n="categories.video">Video & Animation</option>
+                        <option value="image" data-i18n="categories.image">Image & Design</option>
+                        <option value="audio" data-i18n="categories.audio">Audio & Music</option>
+                        <option value="text" data-i18n="categories.text">Text & Writing</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label data-i18n="directory.filters.pricing">Pricing</label>
+                    <select id="pricingFilter">
+                        <option value="" data-i18n="directory.filters.all">All</option>
+                        <option value="free" data-i18n="directory.filters.free">Free</option>
+                        <option value="freemium" data-i18n="directory.filters.freemium">Freemium</option>
+                        <option value="premium" data-i18n="directory.filters.premium">Premium</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label data-i18n="directory.filters.sort">Sort by</label>
+                    <select id="sortFilter">
+                        <option value="featured" data-i18n="directory.filters.featured">Featured</option>
+                        <option value="newest" data-i18n="directory.filters.newest">Newest</option>
+                        <option value="name" data-i18n="directory.filters.name">Name</option>
+                    </select>
+                </div>
+                
+                <div class="view-controls">
+                    <button id="gridView" class="view-btn active" title="Grid View" data-i18n="directory.view.grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button id="listView" class="view-btn" title="List View" data-i18n="directory.view.list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="results-info">
+                <span id="resultsCount">0</span> <span data-i18n="directory.count">tools</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section">
+        <div class="container">
+            <div id="toolsGrid" class="tools-grid">
+                <!-- Tools will be dynamically loaded here -->
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3 data-i18n="directory.noResults.title">No tools found</h3>
+                <p data-i18n="directory.noResults.message">Try adjusting your filters or search terms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sora Spotlight -->
+    <section class="sora-spotlight">
+        <div class="container">
+            <div class="spotlight-content">
+                <div class="spotlight-text">
+                    <h2 data-i18n="directory.sora.title">Sora 2 Spotlight</h2>
+                    <p data-i18n="directory.sora.description">Experience the next generation of AI video creation with Sora 2. Revolutionary text-to-video technology that brings your imagination to life.</p>
+                    <a href="tool-detail.html?tool=sora-2" class="btn-primary" data-i18n="directory.sora.button">Explore Sora 2</a>
+                </div>
+                <div class="spotlight-visual">
+                    <div class="sora-logo">
+                        <span>Sora 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AIToolshed</h3>
+                    <p data-i18n="footer.description">Your ultimate destination for discovering the best AI tools</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.categories.title">Categories</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="categories.video">Video & Animation</a></li>
+                        <li><a href="#" data-i18n="categories.image">Image & Design</a></li>
+                        <li><a href="#" data-i18n="categories.audio">Audio & Music</a></li>
+                        <li><a href="#" data-i18n="categories.text">Text & Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.resources.title">Resources</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.resources.blog">Blog</a></li>
+                        <li><a href="#" data-i18n="footer.resources.guides">Guides</a></li>
+                        <li><a href="#" data-i18n="footer.resources.reviews">Reviews</a></li>
+                        <li><a href="#" data-i18n="footer.resources.news">AI News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.company.title">Company</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.company.about">About</a></li>
+                        <li><a href="#" data-i18n="footer.company.contact">Contact</a></li>
+                        <li><a href="#" data-i18n="footer.company.privacy">Privacy</a></li>
+                        <li><a href="#" data-i18n="footer.company.terms">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AIToolshed. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="directory.js"></script>
+</body>
+</html>

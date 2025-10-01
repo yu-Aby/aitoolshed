@@ -1,0 +1,245 @@
+/* Language Switcher Styles */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.language-current {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-width: 120px;
+    justify-content: space-between;
+}
+
+.language-current:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.language-current .flag {
+    font-size: 1.1rem;
+}
+
+.language-current .name {
+    font-weight: 500;
+}
+
+.language-current i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.language-switcher.active .language-current i {
+    transform: rotate(180deg);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.language-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.language-option:hover {
+    background: #f8f9fa;
+    color: #6366f1;
+}
+
+.language-option.active {
+    background: #6366f1;
+    color: white;
+}
+
+.language-option.active:hover {
+    background: #5856eb;
+}
+
+.language-option .flag {
+    font-size: 1.1rem;
+}
+
+.language-option .name {
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 0.5rem;
+    }
+    
+    .language-current {
+        padding: 0.4rem 0.8rem;
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .language-current .name {
+        display: none;
+    }
+    
+    .language-option .name {
+        font-size: 0.85rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .language-dropdown {
+        background: #1f2937;
+        border-color: #374151;
+    }
+    
+    .language-option {
+        color: #e5e7eb;
+    }
+    
+    .language-option:hover {
+        background: #374151;
+        color: #818cf8;
+    }
+}
+
+/* Animation for language change */
+.language-change-animation {
+    animation: languageChange 0.5s ease-in-out;
+}
+
+@keyframes languageChange {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Integration with existing navbar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-container .language-switcher {
+    order: 3;
+}
+
+.nav-search {
+    order: 2;
+}
+
+.nav-menu {
+    order: 1;
+}
+
+/* Ensure proper spacing */
+@media (min-width: 769px) {
+    .nav-container {
+        gap: 2rem;
+    }
+}
+
+/* Loading state */
+.language-switcher.loading .language-current {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.language-switcher.loading .language-current::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 12px;
+    height: 12px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Accessibility improvements */
+.language-switcher:focus-within .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: -2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .language-current {
+        border-width: 2px;
+        border-color: currentColor;
+    }
+    
+    .language-dropdown {
+        border-width: 2px;
+        border-color: #333;
+    }
+    
+    .language-option:hover,
+    .language-option:focus {
+        background: #000;
+        color: #fff;
+    }
+}
