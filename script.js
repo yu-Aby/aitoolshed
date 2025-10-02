@@ -3,143 +3,143 @@ const aiTools = [
     {
         id: 1,
         name: "Sora 2",
-        description: "OpenAI 旗艦級文生影片模型，支援同步對話與音效生成",
+        description: "OpenAI's flagship text-to-video model with synchronized dialogue and sound generation",
         category: "video",
         pricing: "freemium",
         url: "https://openai.com/index/sora-2/",
-        tags: ["影片生成", "OpenAI", "熱門"],
+        tags: ["Video Generation", "OpenAI", "Popular"],
         featured: true,
         dateAdded: "2024-12-20"
     },
     {
         id: 2,
         name: "Pika Labs 2.0",
-        description: "新一代 AI 影片生成平台，創造令人驚艷的動態內容",
+        description: "Next-generation AI video generation platform creating stunning dynamic content",
         category: "video",
         pricing: "freemium",
         url: "https://pika.art/",
-        tags: ["影片生成", "動畫"],
+        tags: ["Video Generation", "Animation"],
         featured: false,
         dateAdded: "2024-12-18"
     },
     {
         id: 3,
         name: "Viggle",
-        description: "AI 驅動的角色動畫和動作生成工具",
+        description: "AI-powered character animation and motion generation tool",
         category: "video",
         pricing: "free",
         url: "https://www.viggle.ai/",
-        tags: ["動畫", "角色"],
+        tags: ["Animation", "Character"],
         featured: false,
         dateAdded: "2024-12-15"
     },
     {
         id: 4,
         name: "Midjourney V7",
-        description: "最先進的 AI 圖像生成工具，創造令人驚艷的視覺作品",
+        description: "Most advanced AI image generation tool creating stunning visual artwork",
         category: "image",
         pricing: "premium",
         url: "https://www.midjourney.com/",
-        tags: ["圖像生成", "藝術"],
+        tags: ["Image Generation", "Art"],
         featured: true,
         dateAdded: "2024-12-10"
     },
     {
         id: 5,
         name: "Stable Diffusion 4.0",
-        description: "開源 AI 圖像生成模型，提供強大的創作自由度",
+        description: "Open-source AI image generation model with powerful creative freedom",
         category: "image",
         pricing: "free",
         url: "https://stability.ai/",
-        tags: ["圖像生成", "開源"],
+        tags: ["Image Generation", "Open Source"],
         featured: false,
         dateAdded: "2024-12-12"
     },
     {
         id: 6,
         name: "Magnific AI",
-        description: "AI 圖像放大和增強工具，提升圖片質量和解析度",
+        description: "AI image upscaling and enhancement tool improving quality and resolution",
         category: "image",
         pricing: "premium",
         url: "https://magnific.ai/",
-        tags: ["圖像增強", "放大"],
+        tags: ["Image Enhancement", "Upscaling"],
         featured: false,
         dateAdded: "2024-12-15"
     },
     {
         id: 7,
         name: "Krea AI",
-        description: "實時 AI 圖像生成和編輯平台",
+        description: "Real-time AI image generation and editing platform",
         category: "image",
         pricing: "freemium",
         url: "https://www.krea.ai/",
-        tags: ["圖像生成", "實時編輯"],
+        tags: ["Image Generation", "Real-time Editing"],
         featured: false,
         dateAdded: "2024-12-08"
     },
     {
         id: 8,
         name: "Suno V3",
-        description: "AI 音樂創作平台，輕鬆生成專業級音樂作品",
+        description: "AI music creation platform for generating professional-grade music",
         category: "audio",
         pricing: "freemium",
         url: "https://www.suno.ai/",
-        tags: ["音樂生成", "創作"],
+        tags: ["Music Generation", "Creation"],
         featured: true,
         dateAdded: "2024-12-05"
     },
     {
         id: 9,
         name: "Udio AI",
-        description: "AI 音樂創作工具，支援多種音樂風格和樂器",
+        description: "AI music creation tool supporting multiple music styles and instruments",
         category: "audio",
         pricing: "freemium",
         url: "https://www.udio.com/",
-        tags: ["音樂生成", "多風格"],
+        tags: ["Music Generation", "Multi-style"],
         featured: false,
         dateAdded: "2024-12-03"
     },
     {
         id: 10,
         name: "ElevenLabs",
-        description: "AI 語音合成和克隆技術，創造逼真的人聲",
+        description: "AI voice synthesis and cloning technology creating realistic human voices",
         category: "audio",
         pricing: "freemium",
         url: "https://elevenlabs.io/",
-        tags: ["語音合成", "聲音克隆"],
+        tags: ["Voice Synthesis", "Voice Cloning"],
         featured: false,
         dateAdded: "2024-11-28"
     },
     {
         id: 11,
         name: "ChatGPT-5",
-        description: "OpenAI 最新對話 AI，提供更智能的文字創作和問答服務",
+        description: "OpenAI's latest conversational AI providing smarter text creation and Q&A services",
         category: "text",
         pricing: "freemium",
         url: "https://chat.openai.com/",
-        tags: ["對話AI", "文字創作", "OpenAI"],
+        tags: ["Conversational AI", "Text Creation", "OpenAI"],
         featured: true,
         dateAdded: "2024-12-01"
     },
     {
         id: 12,
         name: "Perplexity AI",
-        description: "AI 搜尋引擎，提供準確的資訊檢索和問答服務",
+        description: "AI search engine providing accurate information retrieval and Q&A services",
         category: "text",
         pricing: "freemium",
         url: "https://www.perplexity.ai/",
-        tags: ["搜尋", "問答"],
+        tags: ["Search", "Q&A"],
         featured: false,
         dateAdded: "2024-11-25"
     },
     {
         id: 13,
         name: "Gamma",
-        description: "AI 驅動的簡報和文檔創作平台",
+        description: "AI-powered presentation and document creation platform",
         category: "text",
         pricing: "freemium",
         url: "https://gamma.app/",
-        tags: ["簡報", "文檔創作"],
+        tags: ["Presentations", "Document Creation"],
         featured: false,
         dateAdded: "2024-11-20"
     }
@@ -190,7 +190,7 @@ function displaySearchResults(tools, query) {
         searchSection.className = 'search-results';
         searchSection.innerHTML = `
             <div class="container">
-                <h2 class="section-title">搜尋結果</h2>
+                <h2 class="section-title">Search Results</h2>
                 <div class="search-results-grid"></div>
             </div>
         `;
@@ -203,14 +203,14 @@ function displaySearchResults(tools, query) {
     const resultsGrid = searchSection.querySelector('.search-results-grid');
     const sectionTitle = searchSection.querySelector('.section-title');
     
-    sectionTitle.textContent = `搜尋 "${query}" 的結果 (${tools.length} 個工具)`;
+    sectionTitle.textContent = `Search results for "${query}" (${tools.length} tools)`;
     
     if (tools.length === 0) {
         resultsGrid.innerHTML = `
             <div class="no-results">
                 <i class="fas fa-search"></i>
-                <h3>未找到相關工具</h3>
-                <p>請嘗試其他關鍵詞，如 "Sora 2"、"影片生成" 或 "圖像設計"</p>
+                <h3>No tools found</h3>
+                <p>Try other keywords like "Sora 2", "Video Generation" or "Image Design"</p>
             </div>
         `;
     } else {
@@ -246,16 +246,16 @@ function createToolCard(tool) {
     };
 
     const pricingText = {
-        'free': '免費',
-        'freemium': '免費增值',
-        'premium': '付費'
+        'free': 'Free',
+        'freemium': 'Freemium',
+        'premium': 'Premium'
     };
 
     const categoryText = {
-        'video': '影片與動畫',
-        'image': '圖像與設計',
-        'audio': '音訊與音樂',
-        'text': '文字與寫作'
+        'video': 'Video & Animation',
+        'image': 'Image & Design',
+        'audio': 'Audio & Music',
+        'text': 'Text & Writing'
     };
 
     const categoryIcon = {
@@ -277,7 +277,7 @@ function createToolCard(tool) {
                 <span class="tag-category">${categoryText[tool.category]}</span>
             </div>
             <a href="${tool.url}" class="tool-link" target="_blank">
-                立即體驗 <i class="fas fa-external-link-alt"></i>
+                Try Now <i class="fas fa-external-link-alt"></i>
             </a>
         </div>
     `;
@@ -299,10 +299,10 @@ function filterByCategory(category) {
     const filteredTools = aiTools.filter(tool => tool.category === category);
     
     const categoryNames = {
-        'video': '影片與動畫',
-        'image': '圖像與設計',
-        'audio': '音訊與音樂',
-        'text': '文字與寫作'
+        'video': 'Video & Animation',
+        'image': 'Image & Design',
+        'audio': 'Audio & Music',
+        'text': 'Text & Writing'
     };
     
     displaySearchResults(filteredTools, categoryNames[category]);
